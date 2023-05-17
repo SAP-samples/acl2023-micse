@@ -8,7 +8,7 @@
 This repository **will contain** the source code for our paper [**miCSE: mutual information Contrastive Sentence Embedding for Low-shot Sentence Embeddings**](https://arxiv.org/abs/2211.04928) to be presented at [ACL2023](https://2023.aclweb.org/). The code is in parts based on the code from the paper [SimCSE: Simple Contrastive Learning of Sentence Embeddings](https://github.com/princeton-nlp/SimCSE).
 
 ### Abstract
-
+![Schematic Illustration of miCSE](https://github.com/SAP-samples/acl2023-micse/blob/96c833426b637fc35ca071dc62dfd89e96aee08c/images/ami_pipeline.png)
 This paper presents **miCSE**, a mutual information-based Contrastive learning framework that significantly advances the state-of-the-art in few-shot sentence embedding.The proposed approach imposes alignment between the attention pattern of different views during contrastive learning. Learning sentence embeddings with miCSE entails enforcing the structural consistency across augmented views for every single sentence, making contrastive self-supervised learning more sample efficient. As a result, the proposed approach shows strong performance in the few-shot learning domain. While it achieves superior results compared to state-of-the-art methods on multiple benchmarks in few-shot learning, it is comparable in the full-shot scenario.
 This study opens up avenues for efficient self-supervised learning methods that are more robust than current contrastive methods for sentence embedding.
 
