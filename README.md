@@ -1,33 +1,46 @@
-# SAP-samples/repository-template
-This default template for SAP Samples repositories includes files for README, LICENSE, and .reuse/dep5. All repositories on github.com/SAP-samples will be created based on this template.
+# miCSE: mutual information Contrastive Sentence Embedding for Low-shot Sentence Embeddings
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-red.svg)](#python)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![arXiv](https://img.shields.io/badge/arXiv-2109.05105-29d634.svg)](https://arxiv.org/abs/2211.04928)
 
-# Containing Files
-
-1. The LICENSE file:
-In most cases, the license for SAP sample projects is `Apache 2.0`.
-
-2. The .reuse/dep5 file: 
-The [Reuse Tool](https://reuse.software/) must be used for your samples project. You can find the .reuse/dep5 in the project initial. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository.
-
-3. The README.md file (this file):
-Please edit this file as it is the primary description file for your project. You can find some placeholder titles for sections below.
-
-# [Title]
-<!-- Please include descriptive title -->
-
-<!--- Register repository https://api.reuse.software/register, then add REUSE badge:
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/REPO-NAME)](https://api.reuse.software/info/github.com/SAP-samples/REPO-NAME)
--->
 
 ## Description
-<!-- Please include SEO-friendly description -->
+This repository **will contain** the source code for our paper [**miCSE: mutual information Contrastive Sentence Embedding for Low-shot Sentence Embeddings**](https://arxiv.org/abs/2211.04928) to be presented at [ACL2023](https://2023.aclweb.org/). The code is in parts based on the code from the paper [SimCSE: Simple Contrastive Learning of Sentence Embeddings](https://github.com/princeton-nlp/SimCSE).
+
+### Abstract
+
+This paper presents **miCSE**, a mutual information-based Contrastive learning framework that significantly advances the state-of-the-art in few-shot sentence embedding.The proposed approach imposes alignment between the attention pattern of different views during contrastive learning. Learning sentence embeddings with miCSE entails enforcing the structural consistency across augmented views for every single sentence, making contrastive self-supervised learning more sample efficient. As a result, the proposed approach shows strong performance in the few-shot learning domain. While it achieves superior results compared to state-of-the-art methods on multiple benchmarks in few-shot learning, it is comparable in the full-shot scenario.
+This study opens up avenues for efficient self-supervised learning methods that are more robust than current contrastive methods for sentence embedding.
+
+
+## Language Models
+
+Language models trained for which the performance is reported in the paper are available at the [Huggingface Model Repository](https://huggingface.co/models):
+ - [BERT-base-uncased: sap-ai-research/miCSE](https://huggingface.co/sap-ai-research/miCSE)
+
+#### Authors:
+ - [Tassilo Klein](https://tjklein.github.io/)
+ - [Moin Nabi](https://moinnabi.github.io/)
 
 ## Requirements
+- [Python](https://www.python.org/) (version 3.6 or later)
+- [PyTorch](https://pytorch.org/)
 
-## Download and Installation
 
-## Known Issues
-<!-- You may simply state "No known issues. -->
+## Citations
+If you use this code in your research or want to refer to our work, please cite:
+
+```
+@inproceedings{Klein2023miCSE,
+  title={miCSE: Mutual Information Contrastive Learning for Low-shot Sentence Embeddings},
+  author={Tassilo Klein and Moin Nabi},
+  booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics",
+  month = july,
+  year = "2023",
+  publisher = "Association for Computational Linguistics (ACL)",
+  note ="\textbf{to appear}
+}
+```
 
 ## How to obtain support
 [Create an issue](https://github.com/SAP-samples/<repository-name>/issues) in this repository if you find a bug or have questions about the content.
@@ -38,4 +51,4 @@ For additional support, [ask a question in SAP Community](https://answers.sap.co
 If you wish to contribute code, offer fixes or improvements, please send a pull request. Due to legal reasons, contributors will be asked to accept a DCO when they create the first pull request to this project. This happens in an automated fashion during the submission process. SAP uses [the standard DCO text of the Linux Foundation](https://developercertificate.org/).
 
 ## License
-Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.
+Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
