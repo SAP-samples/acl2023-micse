@@ -2,6 +2,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-red.svg)](#python)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![arXiv](https://img.shields.io/badge/arXiv-2109.05105-29d634.svg)](https://arxiv.org/abs/2211.04928)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/acl2023-micse)](https://api.reuse.software/info/github.com/SAP-samples/acl20230-micse)
 
 
 ## Description
