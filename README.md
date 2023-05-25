@@ -19,6 +19,14 @@ This study opens up avenues for efficient self-supervised learning methods that 
 Language models trained for which the performance is reported in the paper are available at the [Huggingface Model Repository](https://huggingface.co/models):
  - [BERT-base-uncased: sap-ai-research/miCSE](https://huggingface.co/sap-ai-research/miCSE)
 
+```shell
+from transformers import AutoTokenizer, AutoModel
+
+tokenizer = AutoTokenizer.from_pretrained("sap-ai-research/miCSE")
+
+model = AutoModel.from_pretrained("sap-ai-research/miCSE")
+```
+
 #### Authors:
  - [Tassilo Klein](https://tjklein.github.io/)
  - [Moin Nabi](https://moinnabi.github.io/)
@@ -26,6 +34,7 @@ Language models trained for which the performance is reported in the paper are a
 ## Requirements
 - [Python](https://www.python.org/) (version 3.6 or later)
 - [PyTorch](https://pytorch.org/)
+- [HuggingFace Transformers](https://huggingface.co/docs/transformers/index)
 
 
 ## Citations
