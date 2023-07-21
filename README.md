@@ -41,14 +41,18 @@ model = AutoModel.from_pretrained("sap-ai-research/miCSE")
 If you use this code in your research or want to refer to our work, please cite:
 
 ```
-@inproceedings{Klein2023miCSE,
-  title={miCSE: Mutual Information Contrastive Learning for Low-shot Sentence Embeddings},
-  author={Tassilo Klein and Moin Nabi},
-  booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics",
-  month = july,
-  year = "2023",
-  publisher = "Association for Computational Linguistics (ACL)",
-  note ="\textbf{to appear}
+@inproceedings{klein-nabi-2023-micse,
+    title = "mi{CSE}: Mutual Information Contrastive Learning for Low-shot Sentence Embeddings",
+    author = "Klein, Tassilo  and
+      Nabi, Moin",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.339",
+    pages = "6159--6177",
+    abstract = "This paper presents miCSE, a mutual information-based contrastive learning framework that significantly advances the state-of-the-art in few-shot sentence embedding.The proposed approach imposes alignment between the attention pattern of different views during contrastive learning. Learning sentence embeddings with miCSE entails enforcing the structural consistency across augmented views for every sentence, making contrastive self-supervised learning more sample efficient. As a result, the proposed approach shows strong performance in the few-shot learning domain. While it achieves superior results compared to state-of-the-art methods on multiple benchmarks in few-shot learning, it is comparable in the full-shot scenario. This study opens up avenues for efficient self-supervised learning methods that are more robust than current contrastive methods for sentence embedding.",
 }
 ```
 
