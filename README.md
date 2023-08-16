@@ -31,6 +31,14 @@ tokenizer = AutoTokenizer.from_pretrained("sap-ai-research/miCSE")
 model = AutoModel.from_pretrained("sap-ai-research/miCSE")
 ```
 
+## Data
+Training data consists of data splits of different sizes (from 10% to 0.0064%) of the [SimCSE](https://github.com/princeton-nlp/SimCSE) training corpus. Each split size comprises 5 different files, each file created with a different seed. To download the data:
+
+```shell
+cd data
+sh download.sh
+```
+
 #### Authors:
  - [Tassilo Klein](https://tjklein.github.io/)
  - [Moin Nabi](https://moinnabi.github.io/)
