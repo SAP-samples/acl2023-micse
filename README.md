@@ -34,7 +34,7 @@ model = AutoModel.from_pretrained("sap-ai-research/miCSE")
 
 ## Data
 The model was trained on a random collection of **English** sentences from Wikipedia. The *full-shot* training file is available [here].(https://huggingface.co/datasets/princeton-nlp/datasets-for-simcse/resolve/main/wiki1m_for_simcse.txt)
-Low-shot training data consists of data splits of different sizes (from 10% to 0.0064%) of the [SimCSE](https://github.com/princeton-nlp/SimCSE) training corpus. Each split size comprises 5 different files, each file created with a different seed. To download the data:
+Low-shot training data consists of data splits of different sizes (from 10% to 0.0064%) of the [SimCSE](https://github.com/princeton-nlp/SimCSE) training corpus. Each split size comprises 5 files, created with a different seed indicated with filename postfix. To download the data:
 
 ```shell
 cd data
