@@ -5,6 +5,10 @@
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/acl2023-micse)](https://api.reuse.software/info/github.com/SAP-samples/acl20230-micse)
 
 
+#### News
+- **08/16/2023:** :confetti_ball: Training data provided :tada:
+
+
 ## Description
 This repository **will contain** the source code for our paper [**miCSE: mutual information Contrastive Sentence Embedding for Low-shot Sentence Embeddings**](https://arxiv.org/abs/2211.04928) to be presented at [ACL2023](https://2023.aclweb.org/). 
 
