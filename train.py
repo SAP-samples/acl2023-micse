@@ -175,15 +175,11 @@ class ModelArguments:
     )
     task_lambda: float = field(
         default=0.011,
-        metadata={"help": "Barlow Lambda"}
-    )
-    task_gamma: float = field(
-        default=0.001,
-        metadata={"help": "Barlow Lambda"}
+        metadata={"help": "MI weight"}
     )
     task_alpha: float = field(
         default=1.0,
-        metadata={"help": "Barlow Lambda"}
+        metadata={"help": "SimCSE weight"}
     )
 
 
