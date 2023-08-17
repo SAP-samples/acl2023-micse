@@ -44,9 +44,19 @@ sh download.sh
 ## Code
 The repository contains the implementation of attention mutual information (AMI) attention regularizer.
 
-Low-shot training with 10% data split:
+Low-shot training with a 10% data split:
 ```shell
-python train.py --style miCSE --do_train --mlp_only_train --overwrite_output_dir --eval_steps=500 --evaluation_strategy=steps --learning_rate=1e-05 --max_layer=11 --metric_for_best_model=stsb_spearman --min_layer=7 --max_seq_length=32 --model_name_or_path=bert-base-uncased --num_train_epochs=10 --output_dir=result --per_device_train_batch_size=64 --pooler=cls --section=mix --task_alpha=1 --task_lambda=0.0005 --train_file=data/wiki_subset_1M_010.00percent_seed48.txt --tags=miCSE --description=10.0percent,seed48
+python train.py --style miCSE --do_train --mlp_only_train --overwrite_output_dir --eval_steps=500 --evaluation_strategy=steps --learning_rate=1e-05 --max_layer=11 --metric_for_best_model=stsb_spearman --min_layer=7 --max_seq_length=32 --model_name_or_path=bert-base-uncased --num_train_epochs=10 --output_dir=result --per_device_train_batch_size=64 --pooler=cls --task_alpha=1 --task_lambda=0.0005 --train_file=data/wiki_subset_1M_010.00percent_seed48.txt --tags=miCSE --description=10.0percent,seed48
+```
+
+Low-shot training with a 1% data split:
+```shell
+python train.py --style miCSE --do_train --mlp_only_train --overwrite_output_dir --eval_steps=500 --evaluation_strategy=steps --learning_rate=1e-05 --max_layer=11 --metric_for_best_model=stsb_spearman --min_layer=7 --max_seq_length=32 --model_name_or_path=bert-base-uncased --num_train_epochs=50 --output_dir=result --per_device_train_batch_size=64 --pooler=cls  --task_alpha=1 --task_lambda=0.0001 --train_file=data/wiki_subset_1M_001.00percent_seed48.txt --tags=miCSE --description=01.0percent,seed48
+```
+
+Low-shot training with a 0.1% data split:
+```shell
+python train.py --style miCSE --do_train --mlp_only_train --overwrite_output_dir --eval_steps=500 --evaluation_strategy=steps --learning_rate=1e-05 --max_layer=11 --metric_for_best_model=stsb_spearman --min_layer=7 --max_seq_length=32 --model_name_or_path=bert-base-uncased --num_train_epochs=500 --output_dir=result --per_device_train_batch_size=64 --pooler=cls --task_alpha=1 --task_lambda=0.001 --train_file=data/wiki_subset_1M_001.00percent_seed48.txt --tags=miCSE --description=01.0percent,seed48
 ```
 
 #### Authors:
