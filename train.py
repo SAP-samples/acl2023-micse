@@ -684,17 +684,7 @@ def main():
 
     # Evaluation
     results = {}
-#     if training_args.do_eval:
-#         logger.info("*** Evaluate ***")
-#         results = trainer.evaluate(eval_senteval_transfer=True)
 
-#         output_eval_file = os.path.join(training_args.output_dir, "eval_results.txt")
-#         if trainer.is_world_process_zero():
-#             with open(output_eval_file, "w") as writer:
-#                 logger.info("***** Eval results *****")
-#                 for key, value in sorted(results.items()):
-#                     logger.info(f"  {key} = {value}")
-#                     writer.write(f"{key} = {value}\n")
 
     if training_args.delete_model:
         print("Removing folder: "+training_args.output_dir)
