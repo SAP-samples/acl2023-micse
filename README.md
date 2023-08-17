@@ -6,7 +6,7 @@
 
 
 #### News
-- **08/17/2023:** :confetti_ball: Source code provided :tada:
+- **08/17/2023:** :confetti_ball: Source code provided for AMI :tada:
 -  08/16/2023:Training data provided
 
 
