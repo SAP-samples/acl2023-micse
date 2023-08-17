@@ -74,24 +74,37 @@ cd ../../../
 ## Training
 The repository contains the implementation of attention mutual information (AMI) attention regularizer.
 
-Low-shot training with a 10% data split:
+1. Low-shot training:
+   
+* With a 10% data split:
 ```shell
 python train.py --style miCSE --do_train --mlp_only_train --overwrite_output_dir --eval_steps=500 --evaluation_strategy=steps --learning_rate=1e-05 --max_layer=11 --metric_for_best_model=stsb_spearman --min_layer=7 --max_seq_length=32 --model_name_or_path=bert-base-uncased --num_train_epochs=10 --output_dir=result --per_device_train_batch_size=64 --pooler=cls --task_alpha=1 --task_lambda=0.0005 --train_file=data/wiki_subset_1M_010.00percent_seed48.txt --tags=miCSE --description=10.0percent,seed48
 ```
 
-Low-shot training with a 1% data split:
+* With a 1% data split:
 ```shell
 python train.py --style miCSE --do_train --mlp_only_train --overwrite_output_dir --eval_steps=500 --evaluation_strategy=steps --learning_rate=1e-05 --max_layer=11 --metric_for_best_model=stsb_spearman --min_layer=7 --max_seq_length=32 --model_name_or_path=bert-base-uncased --num_train_epochs=50 --output_dir=result --per_device_train_batch_size=64 --pooler=cls  --task_alpha=1 --task_lambda=0.0001 --train_file=data/wiki_subset_1M_001.00percent_seed48.txt --tags=miCSE --description=01.0percent,seed48
 ```
 
-Low-shot training with a 0.1% data split:
+* With a 0.1% data split:
 ```shell
 python train.py --style miCSE --do_train --mlp_only_train --overwrite_output_dir --eval_steps=500 --evaluation_strategy=steps --learning_rate=1e-05 --max_layer=11 --metric_for_best_model=stsb_spearman --min_layer=7 --max_seq_length=32 --model_name_or_path=bert-base-uncased --num_train_epochs=500 --output_dir=result --per_device_train_batch_size=64 --pooler=cls --task_alpha=1 --task_lambda=0.001 --train_file=data/wiki_subset_1M_000.10percent_seed48.txt --tags=miCSE --description=00.1percent,seed48
 ```
 
-Low-shot training with a 0.01% data split:
+* With a 0.01% data split:
 ```shell
 python train.py --style miCSE --do_train --mlp_only_train --overwrite_output_dir --eval_steps=250 --evaluation_strategy=steps --learning_rate=1e-05 --max_layer=11 --metric_for_best_model=stsb_spearman --min_layer=7 --max_seq_length=32 --model_name_or_path=bert-base-uncased --num_train_epochs=2500 --output_dir=result --per_device_train_batch_size=64 --pooler=cls --task_alpha=1 --task_lambda=0.001 --train_file=data/wiki_subset_1M_000.01percent_seed48.txt --tags=miCSE --description=00.01percent,seed48
+```
+
+2. Convert model to Huggingface format
+```
+python micse_to_huggingface.py --path result/<model directory>
+```
+
+3. Evaluate the model
+
+```
+python evaluation.py --pooler cls_before_pooler --task_set sts --mode test --model_name_or_path result/<model directory>
 ```
 
 #### Authors:
