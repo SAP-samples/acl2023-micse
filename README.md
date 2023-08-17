@@ -41,7 +41,7 @@ cd data
 sh download.sh
 ```
 
-## Code
+## Training
 The repository contains the implementation of attention mutual information (AMI) attention regularizer.
 
 Low-shot training with a 10% data split:
