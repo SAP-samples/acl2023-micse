@@ -41,6 +41,36 @@ cd data
 sh download.sh
 ```
 
+## Download and Installation
+
+1. Clone this repository
+```
+git clone https://github.com/SAP-samples/acl2023-micse/ micse
+cd micse
+```
+
+2. Install the requirements
+
+```
+pip install -r requirements.txt
+```
+
+3. Download training data
+
+```
+cd data
+sh download.sh
+cd ..
+```
+
+4. Download evaluation dataset
+
+```
+cd SentEval/data/downstream/
+sh download_dataset.sh
+cd ../../../
+```
+
 ## Training
 The repository contains the implementation of attention mutual information (AMI) attention regularizer.
 
