@@ -1,3 +1,8 @@
+#
+# SPDX-FileCopyrightText: 2023 SAP SE or an SAP affiliate company
+#
+# SPDX-License-Identifier: Apache-2.0
+#
 wget https://huggingface.co/datasets/sap-ai-research/datasets-for-micse/raw/main/wiki_subset_1M_000.0064percent_seed48.txt
 wget https://huggingface.co/datasets/sap-ai-research/datasets-for-micse/raw/main/wiki_subset_1M_000.0064percent_seed49.txt
 wget https://huggingface.co/datasets/sap-ai-research/datasets-for-micse/raw/main/wiki_subset_1M_000.0064percent_seed50.txt
