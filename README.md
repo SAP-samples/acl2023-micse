@@ -11,7 +11,7 @@
 
 
 ## Description
-This repository **will contain** the source code for our paper [**miCSE: mutual information Contrastive Sentence Embedding for Low-shot Sentence Embeddings**](https://arxiv.org/abs/2211.04928) to be presented at [ACL2023](https://2023.aclweb.org/). Source code in parts base on [repository](https://github.com/caskcsg/sentemb).
+This repository **will contain** the source code for our paper [**miCSE: mutual information Contrastive Sentence Embedding for Low-shot Sentence Embeddings**](https://arxiv.org/abs/2211.04928) presented at [ACL2023](https://2023.aclweb.org/). Source code in parts base on [repository](https://github.com/caskcsg/sentemb) and [SimCSE: Simple Contrastive Learning of Sentence Embeddings](https://github.com/princeton-nlp/SimCSE).
 
 ### Abstract
 ![Schematic Illustration of miCSE](https://github.com/SAP-samples/acl2023-micse/blob/96c833426b637fc35ca071dc62dfd89e96aee08c/images/ami_pipeline.png)
