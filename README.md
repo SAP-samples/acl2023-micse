@@ -6,8 +6,8 @@
 
 
 #### News
-- **Source code will be provided shortly**
-- **08/16/2023:** :confetti_ball: Training data provided :tada:
+- **08/17/2023:** :confetti_ball: Source code provided :tada:
+-  08/16/2023:Training data provided
 
 
 ## Description
@@ -40,6 +40,9 @@ Low-shot training data consists of data splits of different sizes (from 10% to 0
 cd data
 sh download.sh
 ```
+
+## Code
+The repository contains the implementation of attention mutual information (AMI) attention regularizer.
 
 #### Authors:
  - [Tassilo Klein](https://tjklein.github.io/)
