@@ -71,7 +71,7 @@ sh download_dataset.sh
 cd ../../../
 ```
 
-## Training
+## Training and Evaluation
 The repository contains the implementation of attention mutual information (AMI) attention regularizer.
 
 1. Low-shot training:
