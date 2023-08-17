@@ -341,8 +341,7 @@ def cl_forward(cls,
         wandb.log({"SimCSE_loss": loss.item()})
     if cls.model_args.style == 'miCSE':
 
-        loss = cls.config.task_alpha * loss + (MI_attn) * cls.config.task_lambda #+ nonzero_ratio * cls.config.task_gamma
-
+        loss = cls.config.task_alpha * loss + (MI_attn) * cls.config.task_lambda
         if torch.is_tensor(MI_attn):
             wandb.log({"MI_normal": MI_attn.item()}) # "Nonzero_ratio": nonzero_ratio,
 
